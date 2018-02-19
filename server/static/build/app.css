@@ -1,0 +1,93 @@
+form#post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  border-bottom: 1px solid #ddd;
+}
+form#post input {
+  padding: 0.875em 1.5em;
+  border: none;
+  outline: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+form#post input:active {
+  outline: none;
+}
+form#post button {
+  color: #fff;
+  padding: 0 2em;
+  background-color: #192a56;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+form#post button:hover {
+  background-color: #273c75;
+}
+form#post button:active {
+  outline: none;
+}
+div#posts {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #ddd;
+  overflow-y: auto;
+}
+div#posts > div {
+  width: 35em;
+  max-width: calc(100% - 2em);
+  padding: 1em 0;
+  margin: 0 auto;
+}
+div#posts > div > div {
+  margin: 1em 0;
+  background-color: #fff;
+  text-align: right;
+}
+div#posts > div > div > div:first-child {
+  padding: 1em 1.5em;
+  padding-bottom: 0.5em;
+  text-align: left;
+}
+div#posts > div > div > div:last-child {
+  display: inline-block;
+  color: #fff;
+  padding: 0.75em 1em;
+  margin-left: auto;
+  background-color: #192a56;
+  font-size: 0.625em;
+}
+section#app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+body {
+  margin: 0;
+}
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}

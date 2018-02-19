@@ -1,0 +1,36 @@
+@import (reference) '../../less/variables.less';
+
+form#post {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	border-bottom: 1px solid @light;
+
+	input {
+		padding: 0.875em 1.5em;
+		border: none;
+		outline: none;
+		flex: 1;
+
+		&:active {
+			outline: none;
+		}
+	}
+
+	button {
+		color: @white;
+		padding: 0 2em;
+		background-color: @primary;
+		border: none;
+		outline: none;
+		cursor: pointer;
+
+		&:hover {
+			background-color: @primary-light;
+		}
+
+		&:active {
+			outline: none;
+		}
+	}
+}
